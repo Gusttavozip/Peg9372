@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Carregando...</title>
+<style>
+  body {
+    background: black;
+    color: lime;
+    font-family: monospace;
+    text-align: center;
+    margin-top: 20%;
+  }
+</style>
+</head>
+<body>
+
+<h1 id="texto">Conectando ao sistema...</h1>
+
+<audio id="som" src="https://www.myinstants.com/media/sounds/scream.mp3"></audio>
+
+<script>
+setTimeout(() => {
+  document.getElementById("texto").innerText = "Acessando arquivos...";
+}, 2000);
+
+setTimeout(() => {
+  document.getElementById("texto").innerText = "Enviando seus dados...";
+}, 4000);
+
+setTimeout(() => {
+  document.body.style.background = "white";
+  document.body.innerHTML = `
+    <img src="https://i.imgur.com/8Km9tLL.jpg" width="100%">
+    <h1 style="color:black;">KKKK foi mal, é zoeira 😂</h1>
+  `;
+  document.getElementById("som").play();
+}, 6000);
+</script>
+
+</body>
+</html>
